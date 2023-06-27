@@ -1,0 +1,96 @@
+*{
+  margin: 0px;
+  padding: 0px;
+
+}
+.header{
+  display: grid;
+  grid-template-columns:repeat(3,1r) ;
+  grid-template-rows: repeat(auto-fit,minmax(2fr,10fr));
+  grid-gap:20px 0px;  
+}
+.head{
+  grid-column: 1/1; 
+  height:5em;
+  padding-top: 1.5rem;
+  text-align: center;  
+  text-decoration: none;
+  font-size: 1.1rem;
+  background-color: rgb(74, 106, 76);
+  color: wheat;
+}
+.getdata{
+  grid-column: 1/1;
+  padding: 1.1rem;
+  text-align: center;
+}
+.getdata input{
+  text-decoration: none;
+  color: brown;
+  border: 1px solid white;
+  height: 4ch;
+  padding: 10px;
+  transition: border-color 1s;
+  text-align: start;
+  margin: 1em;
+}
+.getdata button{
+  margin: 0.2em;
+  height: 3em;
+  width: 6em;
+  font-size: 1rem;
+  background-color: rgb(74, 106, 76);
+  border-style: none;
+  color: wheat;
+  border:1px solid wheat;
+  border-radius: 25px;
+  transition: border-color 1s;
+}
+.getdata button:hover{
+border-color: blueviolet;
+}
+.getdata input:hover{
+border-color: rgb(74, 106, 76);
+}
+.middle{
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.notes{
+  position: relative;
+  width: 270px;
+  height: 200px;
+  margin: 10px;
+  text-decoration: none;
+  background-color: rgb(160, 190, 162);
+  /* border: 1px solid rgb(74, 106, 76); */
+  box-shadow: 5px 5px 5px 5px rgba(153, 226, 162, 0.2);
+}
+.notes h1{
+  color: wheat;
+  background:rgb(74, 106, 76);
+  overflow-wrap: break-word;
+  text-align: center;
+}
+.notes p{
+  padding: 2%;
+  margin:10%;
+  overflow-wrap: break-word;
+}
+.bttn{
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+.bttn button{
+  width: 30px;
+  height: 40px;
+  transition: background-color 0.5s;
+}
+.bttn button:hover{
+  background-color:cadetblue;
+}
+
